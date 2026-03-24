@@ -1,0 +1,1 @@
+set() -> same as mathematical set [set('2112') = {"1", "2"}]
