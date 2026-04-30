@@ -46,6 +46,8 @@ nums is sorted in non-decreasing order.
 '''
 
 # solution
+from typing import List
+
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         if len(nums) <= 2:
