@@ -1,0 +1,165 @@
+%==============================================================%
+%  MD. RAYHAN HOSSAIN — two-column CV  (compile with pdfLaTeX) %
+%  Packages: geometry, XCharter, xcolor, paracol, enumitem,    %
+%            hyperref  — all standard on Overleaf.             %
+%==============================================================%
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.5in,right=0.5in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{XCharter}
+\usepackage{xcolor}
+\usepackage{paracol}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{18697A}
+\definecolor{ink}{HTML}{1A1A1A}
+\definecolor{soft}{HTML}{555F63}
+\definecolor{hairline}{HTML}{BFCDD1}
+
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+\color{ink}
+
+% ---- section heading -----------------------------------------
+\newcommand{\cvsection}[1]{%
+  \vspace{7pt}%
+  {\color{accent}\bfseries\scshape\large #1}\par
+  \vspace{1.5pt}{\color{hairline}\hrule height 0.7pt}\vspace{5pt}}
+
+% ---- experience / project entry -------------------------------
+% #1 title  #2 organisation or role  #3 dates  #4 stack line
+\newcommand{\cventry}[4]{%
+  {\bfseries #1}\par
+  \vspace{0.5pt}{\color{accent}\small #2}\hfill{\small\itshape #3}\par
+  \vspace{1pt}{\footnotesize\color{soft} #4}\par
+  \vspace{2pt}}
+
+% ---- skills group (right column) ------------------------------
+\newcommand{\skillgroup}[2]{%
+  {\bfseries\small #1}\par{\small #2}\par\vspace{4pt}}
+
+% ---- one-line award / certification ---------------------------
+\newcommand{\award}[2]{%
+  {\small\bfseries #1}\par{\footnotesize\color{soft} #2}\par\vspace{3.5pt}}
+
+\setlist[itemize]{leftmargin=1.05em, itemsep=1.6pt, topsep=2.5pt,
+                  parsep=0pt, partopsep=0pt,
+                  label=\textcolor{accent}{\small\textbullet}}
+
+\newcommand{\dotsep}{\ \textperiodcentered\ }
+
+\columnratio{0.635}
+\setlength{\columnsep}{7mm}
+
+\begin{document}
+
+\begin{center}
+  {\Huge\bfseries MD. RAYHAN HOSSAIN}\par\vspace{4pt}
+  {\large\color{accent}\scshape Software Engineer \textbar\ ERPNext / Frappe \& Python}\par\vspace{6pt}
+  {\small mostafaizurrahman2021@gmail.com \dotsep 01312961737 \dotsep Dhaka, Bangladesh}\par\vspace{2.5pt}
+  {\small \href{https://www.linkedin.com/in/mdrayhan03/}{linkedin.com/in/mdrayhan03} \dotsep
+          \href{https://github.com/mdrayhan03}{github.com/mdrayhan03} \dotsep
+          \href{https://rayhan-portfolio.lovable.app}{rayhan-portfolio.lovable.app}}
+\end{center}
+\vspace{4pt}{\color{hairline}\hrule height 1pt}\vspace{2pt}
+
+\begin{paracol}{2}
+
+\cvsection{Professional Summary}
+Software Engineer with hands-on \textbf{ERPNext} and \textbf{Frappe Framework} experience delivering a
+production real-estate ERP. Automated an entire operations workflow, replacing a manual Excel process
+and eliminating hours of repetitive data entry, then containerised and deployed the platform on Azure.
+Backed by full-stack Python engineering in Django and FastAPI.
+
+\cvsection{Experience}
+
+\cventry{Full Stack Software Engineer}{Janatawifi LTD}{Dec 2025 -- Present}
+{Frappe \dotsep ERPNext \dotsep Python \dotsep MariaDB \dotsep Django \dotsep FastAPI \dotsep Redis \dotsep Celery \dotsep Docker \dotsep Azure}
+\begin{itemize}
+  \item Delivered \textbf{CWTAMC}, a real-estate \textbf{ERP} on \textbf{Frappe / ERPNext} --- automated
+        the entire operations workflow, replacing a fully manual Excel-based process and eliminating
+        hours of repetitive data entry.
+  \item Built custom \textbf{DocTypes}, server and client scripts, \textbf{workflows} and print formats
+        in the \textbf{Frappe Framework}, and handled \textbf{data migration} from the legacy
+        spreadsheet process.
+  \item Gathered requirements directly from operations staff and translated them into ERP modules,
+        \textbf{role-based permissions} and approval workflows.
+  \item Containerised the ERP backend with \textbf{Docker} and deployed on \textbf{Azure} for consistent,
+        reproducible releases; monitored live services via Portainer with structured Python logging.
+  \item Built \textbf{TraderBro}, an autonomous AI agent on LangChain and LangGraph integrating four LLM
+        providers for real-time signal aggregation and decision-support workflows.
+\end{itemize}
+\vspace{3pt}
+
+\cventry{Undergraduate Teaching Assistant}{Independent University, Bangladesh}{Feb 2024 -- Nov 2025}
+{Java \dotsep JavaFX \dotsep Git/GitHub}
+\begin{itemize}
+  \item Taught \textbf{object-oriented programming}, Java and Git/GitHub to \textbf{200+ students}
+        through structured tutorial sessions and hands-on project guidance.
+\end{itemize}
+
+\cvsection{Projects}
+
+\cventry{Plastic Kothay --- Crowdsourced Waste Reporting Platform}{Sole engineer \dotsep \href{https://github.com/mdrayhan03/plastickothay_dev}{github.com/mdrayhan03/plastickothay\_dev}}{May 2025 -- Present}
+{Django \dotsep Django REST Framework \dotsep PostgreSQL \dotsep React \dotsep TypeScript \dotsep Docker}
+\begin{itemize}
+  \item Built the platform end to end --- backend, React frontend, database design, deployment and test
+        suite --- including a moderation workflow with \textbf{role-based access control} for reviewing
+        and approving submissions.
+  \item Architected the backend as a \textbf{hexagonal (ports-and-adapters)} design with swappable
+        adapters for persistence, storage, email and authentication, enforced in \textbf{CI with GitHub
+        Actions} across 31 test files.
+\end{itemize}
+\vspace{3pt}
+
+\cventry{Volunteer Portal --- Volunteer Management System}{Backend}{Nov 2025 -- Apr 2026}
+{Django REST Framework \dotsep Supabase \dotsep Next.js}
+\begin{itemize}
+  \item Built a \textbf{REST API} managing \textbf{1000+ volunteers} across attendance tracking, profile
+        management and \textbf{role-based access control}, replacing manual record-keeping.
+  \item Designed and documented RESTful endpoints consumed by a Next.js frontend, enabling registration
+        and real-time data updates.
+\end{itemize}
+\vspace{3pt}
+
+\cventry{RideBuddy --- University Ride-Sharing Platform}{Full stack}{Mar 2026 -- Present}
+{Django \dotsep PostgreSQL \dotsep OpenStreetMap API}
+\begin{itemize}
+  \item Built a ride-matching and cost-splitting algorithm and the full booking-to-completion lifecycle,
+        with Django test coverage over business rules and permissions.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Education}
+{\bfseries BSc, Computer Science \& Engineering}\par
+{\small\color{accent} Independent University, Bangladesh}\par
+{\small Sep 2022 -- \textbf{Expected Sep 2026}}\par
+{\small GPA \textbf{3.81 / 4.00} \dotsep Dean's List}
+
+\cvsection{Technical Skills}
+\skillgroup{ERP}{Frappe Framework, ERPNext, DocType, custom app development, server \& client scripts, workflows, print formats, Jinja, Bench, data migration, business process automation, requirement gathering}
+\skillgroup{Languages}{Python, JavaScript, TypeScript, Java, SQL, Bash}
+\skillgroup{Backend}{Django, Django REST Framework, FastAPI, Flask, Celery, REST API design, JWT, OAuth 2.0}
+\skillgroup{Databases}{MariaDB, MySQL, PostgreSQL, MongoDB, Redis, schema design, query optimization}
+\skillgroup{Infrastructure}{Docker, Azure, AWS, Nginx, Linux, Git/GitHub, GitHub Actions, CI/CD, Portainer}
+\skillgroup{Frontend}{React, Next.js, Tailwind CSS, Bootstrap, JavaFX}
+\skillgroup{Practices}{pytest, unit \& integration testing, OOP, SOLID, system design, Agile, Scrum, code review}
+
+\cvsection{Awards}
+\award{Dean's List Honoree}{Independent University Bangladesh \dotsep Dec 2022}
+\award{1st Runner-Up, Hult Prize IUB}{Feb 2025}
+\award{1st Runner-Up, Cisco IoT Hackathon}{Nov 2024}
+\award{2nd Runner-Up, IUB Intra Programming Contest}{Nov 2023}
+
+\cvsection{Certifications}
+\award{Agile Project Management}{HP LIFE \dotsep Jul 2025}
+\award{Docker Essentials: A Developer Introduction}{IBM \dotsep Jul 2025}
+\award{CCNA: Introduction to Networks}{Cisco \dotsep Aug 2025}
+
+\end{paracol}
+\end{document}

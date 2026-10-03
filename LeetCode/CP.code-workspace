@@ -6,5 +6,8 @@
 		{
 			"path": "../../Learning"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CP"
+	}
 }

@@ -1,0 +1,159 @@
+%===============================================================%
+%  MD. RAYHAN HOSSAIN — two-column CV                           %
+%  Compile with pdfLaTeX. All packages are standard on Overleaf.%
+%===============================================================%
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.5in,right=0.5in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{XCharter}
+\usepackage{xcolor}
+\usepackage{paracol}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{accent}{HTML}{18697A}
+\definecolor{ink}{HTML}{1A1A1A}
+\definecolor{soft}{HTML}{555F63}
+\definecolor{hairline}{HTML}{BFCDD1}
+
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\color{ink}
+
+% ---- separator -------------------------------------------------
+\newcommand{\dotsep}{\ \textperiodcentered\ }
+
+% ---- section heading -------------------------------------------
+\newcommand{\cvsection}[1]{%
+  \vspace{7pt}%
+  {\color{accent}\bfseries\scshape\large #1}\par
+  \vspace{1pt}%
+  \noindent\textcolor{hairline}{\rule{\linewidth}{0.7pt}}\par
+  \vspace{4pt}}
+
+% ---- experience / project entry --------------------------------
+% #1 title   #2 organisation or role   #3 dates   #4 stack line
+\newcommand{\cventry}[4]{%
+  {\bfseries #1}\par
+  \vspace{0.5pt}{\color{accent}\small #2}\hfill{\small\itshape #3}\par
+  \vspace{1pt}{\footnotesize\color{soft} #4}\par
+  \vspace{2pt}}
+
+% ---- skills group (right column) -------------------------------
+\newcommand{\skillgroup}[2]{%
+  {\bfseries\small #1}\par{\small #2}\par\vspace{4pt}}
+
+% ---- award / certification line --------------------------------
+\newcommand{\award}[2]{%
+  {\small\bfseries #1}\par{\footnotesize\color{soft} #2}\par\vspace{3.5pt}}
+
+\setlist[itemize]{leftmargin=1.05em, itemsep=1.6pt, topsep=2.5pt,
+                  parsep=0pt, partopsep=0pt,
+                  label=\textcolor{accent}{\small\textbullet}}
+
+\columnratio{0.635}
+\setlength{\columnsep}{7mm}
+
+\begin{document}
+
+\begin{center}
+  {\Huge\bfseries MD. RAYHAN HOSSAIN}\par\vspace{4pt}
+  {\large\color{accent}\scshape AI Engineer \textbar\ LLM Agents, LangGraph \& Python}\par\vspace{6pt}
+  {\small mostafaizurrahman2021@gmail.com \dotsep 01312961737 \dotsep Dhaka, Bangladesh}\par\vspace{2.5pt}
+  {\small \href{https://www.linkedin.com/in/mdrayhan03/}{linkedin.com/in/mdrayhan03} \dotsep
+          \href{https://github.com/mdrayhan03}{github.com/mdrayhan03} \dotsep
+          \href{https://rayhan-portfolio.lovable.app}{rayhan-portfolio.lovable.app}}
+\end{center}
+\vspace{4pt}\noindent\textcolor{hairline}{\rule{\textwidth}{1pt}}\par\vspace{2pt}
+
+\begin{paracol}{2}
+
+\cvsection{Professional Summary}
+AI Engineer building autonomous LLM agents in production, not prototypes. Shipped a multi-model
+agentic system on LangChain and LangGraph integrating GPT, Claude, Gemini and xAI for real-time signal
+aggregation and decision support --- backed by strong Python backend engineering in FastAPI, Celery
+and Docker.
+
+\cvsection{Experience}
+
+\cventry{Full Stack Software Engineer}{Janatawifi LTD}{Dec 2025 -- Present}
+{Python \dotsep LangChain \dotsep LangGraph \dotsep FastAPI \dotsep Django \dotsep PostgreSQL \dotsep Qdrant \dotsep Redis \dotsep Celery \dotsep Docker \dotsep Azure}
+\begin{itemize}
+  \item Built \textbf{TraderBro}, an autonomous \textbf{AI agent} on \textbf{LangChain} and
+        \textbf{LangGraph} integrating \textbf{GPT, Claude, Gemini and xAI} with the Twitter API and
+        ScrapeCreators for real-time credit-risk signal aggregation and \textbf{agentic
+        decision-support workflows}.
+  \item Designed \textbf{multi-provider LLM orchestration} with \textbf{tool calling} and fallback
+        routing across four model vendors, keeping the agent running when any single provider degraded.
+  \item Served agent workloads from \textbf{FastAPI} with \textbf{Celery} task queues and \textbf{Redis}
+        caching for asynchronous long-running jobs, and cut average \textbf{API response time
+        \textasciitilde35\%} by offloading assets to Cloudflare R2 object storage.
+  \item Containerised and deployed the agent stack with \textbf{Docker} on \textbf{Azure}, monitoring
+        live services with structured Python logging to diagnose production issues.
+\end{itemize}
+\vspace{4pt}
+
+\cventry{Undergraduate Teaching Assistant}{Independent University, Bangladesh}{Feb 2024 -- Nov 2025}
+{Java \dotsep JavaFX \dotsep Git/GitHub}
+\begin{itemize}
+  \item Taught \textbf{object-oriented programming}, Java and Git/GitHub to \textbf{200+ students},
+        mentoring them through design and debugging on their own projects.
+\end{itemize}
+
+\cvsection{Projects}
+
+\cventry{Plastic Kothay --- Crowdsourced Waste Reporting Platform}{Sole engineer}{May 2025 -- Present}
+{Django \dotsep Django REST Framework \dotsep PostgreSQL \dotsep React \dotsep TypeScript \dotsep Docker \dotsep GitHub Actions}
+{\footnotesize\color{accent}\href{https://github.com/mdrayhan03/plastickothay_dev}{github.com/mdrayhan03/plastickothay\_dev}}\par\vspace{2pt}
+\begin{itemize}
+  \item Built the platform end to end and architected the backend as a \textbf{hexagonal
+        (ports-and-adapters)} design --- a framework-free domain core with swappable adapters for
+        persistence, storage, email and authentication.
+  \item Enforced the architecture in \textbf{CI with GitHub Actions} (\texttt{lint-imports}, ruff,
+        pytest) across \textbf{31 test files} spanning unit, integration and contract tests.
+  \item Integrated the \textbf{Google Drive API} for media storage with compensating rollback on failed
+        uploads, since third-party storage cannot join the database transaction.
+\end{itemize}
+\vspace{4pt}
+
+\cventry{RideBuddy --- University Ride-Sharing Platform}{Full stack}{Mar 2026 -- Present}
+{Django \dotsep PostgreSQL \dotsep OpenStreetMap API}
+\begin{itemize}
+  \item Built a custom \textbf{ride-matching and cost-splitting algorithm} with preference filters, and
+        the full ride lifecycle from booking to completion, covered by Django test cases.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Education}
+{\bfseries BSc, Computer Science \& Engineering}\par
+{\small\color{accent} Independent University, Bangladesh}\par
+{\small Sep 2022 -- \textbf{Expected Sep 2026}}\par
+{\small GPA \textbf{3.81 / 4.00} \dotsep Dean's List}
+
+\cvsection{Technical Skills}
+\skillgroup{AI / LLM}{LangChain, LangGraph, agentic workflows, multi-agent orchestration, tool calling / function calling, prompt engineering, OpenAI API, Anthropic API, Gemini API, xAI, RAG (Retrieval-Augmented Generation), vector embeddings, semantic search}
+\skillgroup{Vector \& Data Stores}{Qdrant, PostgreSQL, MongoDB, Redis, MySQL, MariaDB}
+\skillgroup{Languages}{Python, JavaScript, TypeScript, Java, SQL, Bash}
+\skillgroup{Backend}{FastAPI, Django, Django REST Framework, Flask, Celery, REST API design, JWT, OAuth 2.0}
+\skillgroup{Infrastructure}{Docker, Azure, AWS, Cloudflare R2, Nginx, Linux, GitHub Actions, CI/CD}
+\skillgroup{Frontend}{React, Next.js, TypeScript, Tailwind CSS}
+\skillgroup{Practices}{pytest, unit \& integration testing, OOP, SOLID, hexagonal architecture, system design, Agile, code review}
+
+\cvsection{Awards}
+\award{1st Runner-Up, Cisco IoT Hackathon}{Nov 2024}
+\award{1st Runner-Up, Hult Prize IUB}{Feb 2025}
+\award{Dean's List Honoree}{Independent University Bangladesh \dotsep Dec 2022}
+\award{2nd Runner-Up, IUB Intra Programming Contest}{Nov 2023}
+
+\cvsection{Certifications}
+\award{Docker Essentials: A Developer Introduction}{IBM \dotsep Jul 2025}
+\award{Agile Project Management}{HP LIFE \dotsep Jul 2025}
+\award{CCNA: Introduction to Networks}{Cisco \dotsep Aug 2025}
+
+\end{paracol}
+\end{document}
