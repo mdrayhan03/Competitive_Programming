@@ -1,0 +1,5 @@
+model,Green_%onVeg,Dead_%onVeg,Clover_%onVeg,Overall_%onVeg,vs_baseline(+pts)
+MobileNetV0,89.8,90.0,89.6,89.8,-0.4
+EfficientNetB0,90.5,90.4,90.0,90.3,0.1
+EfficientNetB3,90.6,90.2,90.2,90.4,0.2
+DenseNet121,89.9,90.2,90.7,90.3,0.1

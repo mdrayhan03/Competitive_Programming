@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(python3 -c \"import json,sys; nb=json.load\\(open\\('iub-kryptonite-test-code.ipynb'\\)\\); print\\('nbformat',nb.get\\('nbformat'\\),nb.get\\('nbformat_minor'\\)\\); print\\('ncells',len\\(nb['cells']\\)\\); print\\([ \\(i,c['cell_type'], \\(''.join\\(c['source']\\)[:45]\\).replace\\(chr\\(10\\),' '\\)\\) for i,c in enumerate\\(nb['cells']\\) ]\\)\")",
+      "Bash(python3 \"/private/tmp/claude-501/-Users-mdrayhan03-Work-Merge-CP/17bfaf33-dfdb-4568-99c1-bc2af5c0b810/scratchpad/gen_models.py\")",
+      "Bash(python3 -)",
+      "Bash(python3 \"/private/tmp/claude-501/-Users-mdrayhan03-Work-Merge-CP/17bfaf33-dfdb-4568-99c1-bc2af5c0b810/scratchpad/update_models.py\")",
+      "Bash(python3 \"/private/tmp/claude-501/-Users-mdrayhan03-Work-Merge-CP/17bfaf33-dfdb-4568-99c1-bc2af5c0b810/scratchpad/mobilenet_rawloss.py\")",
+      "Bash(python3 \"/private/tmp/claude-501/-Users-mdrayhan03-Work-Merge-CP/17bfaf33-dfdb-4568-99c1-bc2af5c0b810/scratchpad/rollout_rawloss.py\")",
+      "Bash(python3 \"/private/tmp/claude-501/-Users-mdrayhan03-Work-Merge-CP/17bfaf33-dfdb-4568-99c1-bc2af5c0b810/scratchpad/fraction_unfreeze.py\")",
+      "Bash(python3 -c ' *)",
+      "Bash(md5 -q densenet121_result/target_metrics_main.csv efficientnetB3_result/target_metrics_main.csv)",
+      "Bash(python3 \"/private/tmp/claude-501/-Users-mdrayhan03-Work-Merge-CP/17bfaf33-dfdb-4568-99c1-bc2af5c0b810/scratchpad/make_submission_nb.py\")",
+      "Bash(awk 'NR>1{print $5, $NF}')",
+      "Bash(python3 \"/private/tmp/claude-501/-Users-mdrayhan03-Work-Merge-CP/17bfaf33-dfdb-4568-99c1-bc2af5c0b810/scratchpad/make_ci_nb.py\")",
+      "Read(//Users/mdrayhan03/Work/Merge/**)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -c \"import ast; ast.parse\\(open\\('/Users/mdrayhan03/Work/Merge/CP/Thesis/research_paper/ablation_effb0.py'\\).read\\(\\)\\); print\\('syntax OK'\\)\")",
+      "Skill(dataviz)",
+      "Skill(dataviz:*)",
+      "Bash(sed -n '/## IX. Computational/,/## X\\\\./p' paper_v2.md)",
+      "Bash(sed -n '/Figures: training curves/,/## VII/p' paper_v2.md)",
+      "Bash(python3 -c \"import ast; ast.parse\\(open\\('/Users/mdrayhan03/Work/Merge/CP/Thesis/research_paper/xai_metric.py'\\).read\\(\\)\\); print\\('xai_metric.py syntax OK'\\)\")",
+      "Bash(python3 -c \"import ast; ast.parse\\(open\\('/Users/mdrayhan03/Work/Merge/CP/Thesis/research_paper/ablation_vit.py'\\).read\\(\\)\\); print\\('ablation_vit.py syntax OK'\\)\")",
+      "Bash(grep -vE '^\\\\[\\(1[0-9]|2[0-6]|[1-9]\\)\\\\]$')",
+      "Bash(sort -t'[' -k2 -n)",
+      "Bash(awk '{print $2, \"x\"$1}')",
+      "WebFetch(domain:doi.org)",
+      "Bash(python3 -c \"import docx; print\\('python-docx', docx.__version__\\)\")",
+      "Bash(python3 build_ieee_docx.py)"
+    ]
+  }
+}

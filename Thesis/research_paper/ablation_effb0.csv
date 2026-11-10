@@ -1,0 +1,8 @@
+configuration,weighted_R2,delta_vs_final,MAE_g,RMSE_g,seconds
+"FINAL (raw, a=0.35, unfreeze=0.30, BN frozen, trimmed aug)",0.6965,0.0,7.03,10.954,188
+Target: log1p (vs raw),0.2769,-0.4196,7.699,14.167,149
+Loss: alpha=0.65 (MAE-heavy),0.6857,-0.0108,6.727,10.77,165
+Loss: alpha=0.50,0.6777,-0.0189,7.06,11.035,157
+Unfreeze: frozen backbone (head only),0.4394,-0.2572,9.168,14.462,2224
+BatchNorm: trainable (vs frozen),0.3783,-0.3182,7.953,13.972,213
+Augmentation: full (color jitter + zoom),-0.1675,-0.8641,11.142,17.914,1099

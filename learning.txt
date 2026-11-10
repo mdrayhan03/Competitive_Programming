@@ -1,1 +1,28 @@
-set() -> same as mathematical set [set('2112') = {"1", "2"}]
+🥇 Start here (highest ROI, do in this order)
+Sentry (error tracking) — 1 day to integrate into Django. Instant "I have monitoring" credibility. Learn this first.
+pytest + pytest-django + coverage.py — replace ad-hoc/AI testing with a real suite. Learn fixtures, mocking (unittest.mock), factory_boy for test data. Aim for meaningful coverage, not 100%.
+GitHub Actions CI — a workflow that runs lint + tests on every push. This single skill removes your biggest gap. Then extend to build Docker image → deploy.
+Structured logging (structlog or JSON logging) + a /health endpoint (django-health-check) — a few days, big professionalism jump.
+Testing (depth path)
+Levels: unit → integration → end-to-end (the "test pyramid").
+Tools: pytest, pytest-django, DRF's APITestCase, coverage.py, factory_boy, freezegun.
+Advanced: property-based testing (Hypothesis), load testing (Locust or k6), E2E (Playwright), contract testing.
+For your AI work (TraderBro): learn LLM evaluation — eval datasets, mocking LLM calls for deterministic tests, "LLM-as-judge" for non-deterministic output. This is rare and would set you apart.
+Monitoring / Observability — the "3 pillars": metrics, logs, traces
+Metrics: Prometheus + Grafana + cAdvisor (this is the real upgrade from Portainer — same data, industry-standard stack). Learn counters/gauges/histograms and the RED/USE methods.
+Tracing: OpenTelemetry (today's standard) + Jaeger/Tempo for distributed tracing.
+Hosted (know they exist): Datadog, New Relic, Grafana Cloud.
+Alerting + reliability: Alertmanager, and the concepts of SLI/SLO/error budgets.
+Logging
+Move from print → structured JSON logs with log levels and correlation/request IDs.
+Centralized aggregation: Loki + Grafana (lighter) or the ELK stack (Elasticsearch/Logstash/Kibana).
+Hygiene: never log secrets, log rotation, sampling.
+Health checks
+Liveness vs readiness (Kubernetes vocabulary, but universal): is it alive vs ready to serve.
+HTTP endpoints /healthz, /readyz that also check dependencies (DB, Redis, external APIs reachable).
+Uptime monitoring: Healthchecks.io, UptimeRobot, Better Uptime.
+Concepts: graceful shutdown, circuit breakers, retries with backoff.
+CI/CD (you want this)
+GitHub Actions first: pipeline = lint → test → build image → push to registry → deploy.
+Concepts: runners, secrets, caching, matrix builds.
+Later: GitLab CI, GitOps/ArgoCD, blue-green & canary deploys (then you can honestly write "zero-downtime" 😉).

@@ -1,0 +1,239 @@
+Image paths sampled per loop (SAME across all models; seed = loop index)
+
+--- Loop 1 (10 images) ---
+  train/ID1414371018.jpg
+  train/ID141370843.jpg
+  train/ID846984946.jpg
+  train/ID1783499590.jpg
+  train/ID668475812.jpg
+  train/ID668330410.jpg
+  train/ID1199150612.jpg
+  train/ID1717006117.jpg
+  train/ID2099742797.jpg
+  train/ID875119737.jpg
+
+--- Loop 2 (10 images) ---
+  train/ID40849327.jpg
+  train/ID1403078396.jpg
+  train/ID1028611175.jpg
+  train/ID668330410.jpg
+  train/ID950496197.jpg
+  train/ID94564238.jpg
+  train/ID1620371305.jpg
+  train/ID317990700.jpg
+  train/ID210865340.jpg
+  train/ID668475812.jpg
+
+--- Loop 3 (10 images) ---
+  train/ID152157478.jpg
+  train/ID978026131.jpg
+  train/ID799079114.jpg
+  train/ID1291116815.jpg
+  train/ID661372352.jpg
+  train/ID1988033238.jpg
+  train/ID679913293.jpg
+  train/ID1084819986.jpg
+  train/ID105271783.jpg
+  train/ID1148666289.jpg
+
+--- Loop 4 (10 images) ---
+  train/ID95050718.jpg
+  train/ID846984946.jpg
+  train/ID473494649.jpg
+  train/ID900012207.jpg
+  train/ID380752847.jpg
+  train/ID875119737.jpg
+  train/ID668330410.jpg
+  train/ID2099742797.jpg
+  train/ID1084819986.jpg
+  train/ID1623964968.jpg
+
+--- Loop 5 (10 images) ---
+  train/ID1345375788.jpg
+  train/ID1413758094.jpg
+  train/ID498304885.jpg
+  train/ID152157478.jpg
+  train/ID353424190.jpg
+  train/ID94564238.jpg
+  train/ID875119737.jpg
+  train/ID950496197.jpg
+  train/ID1783499590.jpg
+  train/ID1573329652.jpg
+
+--- Loop 6 (10 images) ---
+  train/ID380752847.jpg
+  train/ID152157478.jpg
+  train/ID1472525822.jpg
+  train/ID1717006117.jpg
+  train/ID1182523622.jpg
+  train/ID710341728.jpg
+  train/ID697718693.jpg
+  train/ID105271783.jpg
+  train/ID1414371018.jpg
+  train/ID1199150612.jpg
+
+--- Loop 7 (10 images) ---
+  train/ID105271783.jpg
+  train/ID1127246618.jpg
+  train/ID1782608354.jpg
+  train/ID1783499590.jpg
+  train/ID2037861084.jpg
+  train/ID353424190.jpg
+  train/ID1413758094.jpg
+  train/ID40849327.jpg
+  train/ID249042826.jpg
+  train/ID1559189397.jpg
+
+--- Loop 8 (10 images) ---
+  train/ID846984946.jpg
+  train/ID1444674500.jpg
+  train/ID661372352.jpg
+  train/ID1573329652.jpg
+  train/ID1473228876.jpg
+  train/ID290369222.jpg
+  train/ID473494649.jpg
+  train/ID697718693.jpg
+  train/ID1623964968.jpg
+  train/ID1859251563.jpg
+
+--- Loop 9 (10 images) ---
+  train/ID290369222.jpg
+  train/ID1988033238.jpg
+  train/ID1859251563.jpg
+  train/ID210865340.jpg
+  train/ID1717006117.jpg
+  train/ID1623964968.jpg
+  train/ID6269659.jpg
+  train/ID900012207.jpg
+  train/ID1444674500.jpg
+  train/ID353424190.jpg
+
+--- Loop 10 (10 images) ---
+  train/ID210865340.jpg
+  train/ID1988033238.jpg
+  train/ID1703304524.jpg
+  train/ID1782608354.jpg
+  train/ID1139918758.jpg
+  train/ID1291116815.jpg
+  train/ID1275072698.jpg
+  train/ID95050718.jpg
+  train/ID353424190.jpg
+  train/ID380752847.jpg
+
+--- Loop 11 (10 images) ---
+  train/ID1428837636.jpg
+  train/ID1028611175.jpg
+  train/ID473494649.jpg
+  train/ID121331988.jpg
+  train/ID1182523622.jpg
+  train/ID668475812.jpg
+  train/ID1414371018.jpg
+  train/ID587125778.jpg
+  train/ID1119739385.jpg
+  train/ID1215977190.jpg
+
+--- Loop 12 (10 images) ---
+  train/ID668330410.jpg
+  train/ID1413758094.jpg
+  train/ID380752847.jpg
+  train/ID846984946.jpg
+  train/ID317990700.jpg
+  train/ID94564238.jpg
+  train/ID443091455.jpg
+  train/ID1428837636.jpg
+  train/ID1559189397.jpg
+  train/ID1463690813.jpg
+
+--- Loop 13 (10 images) ---
+  train/ID679913293.jpg
+  train/ID2099742797.jpg
+  train/ID1139918758.jpg
+  train/ID587125778.jpg
+  train/ID1473228876.jpg
+  train/ID210865340.jpg
+  train/ID249042826.jpg
+  train/ID1472525822.jpg
+  train/ID1413758094.jpg
+  train/ID1277756619.jpg
+
+--- Loop 14 (10 images) ---
+  train/ID1988033238.jpg
+  train/ID2052442675.jpg
+  train/ID1414371018.jpg
+  train/ID1444674500.jpg
+  train/ID1028611175.jpg
+  train/ID1395011773.jpg
+  train/ID875119737.jpg
+  train/ID1277756619.jpg
+  train/ID2099742797.jpg
+  train/ID1703304524.jpg
+
+--- Loop 15 (10 images) ---
+  train/ID1976436386.jpg
+  train/ID710341728.jpg
+  train/ID1275072698.jpg
+  train/ID6269659.jpg
+  train/ID1148666289.jpg
+  train/ID1345375788.jpg
+  train/ID1036339023.jpg
+  train/ID1620371305.jpg
+  train/ID875119737.jpg
+  train/ID1414371018.jpg
+
+=== OVERLAP SUMMARY ===
+Total picks: 150 | Unique images: 67/72
+Images appearing in >1 loop: 51
+Max times one image picked: 5
+
+Images picked more than once (path: count):
+  train/ID1414371018.jpg: 5
+  train/ID875119737.jpg: 5
+  train/ID846984946.jpg: 4
+  train/ID668330410.jpg: 4
+  train/ID2099742797.jpg: 4
+  train/ID210865340.jpg: 4
+  train/ID1988033238.jpg: 4
+  train/ID380752847.jpg: 4
+  train/ID1413758094.jpg: 4
+  train/ID353424190.jpg: 4
+  train/ID1783499590.jpg: 3
+  train/ID668475812.jpg: 3
+  train/ID1717006117.jpg: 3
+  train/ID1028611175.jpg: 3
+  train/ID94564238.jpg: 3
+  train/ID152157478.jpg: 3
+  train/ID105271783.jpg: 3
+  train/ID473494649.jpg: 3
+  train/ID1623964968.jpg: 3
+  train/ID1444674500.jpg: 3
+  train/ID1199150612.jpg: 2
+  train/ID40849327.jpg: 2
+  train/ID950496197.jpg: 2
+  train/ID1620371305.jpg: 2
+  train/ID317990700.jpg: 2
+  train/ID1291116815.jpg: 2
+  train/ID661372352.jpg: 2
+  train/ID679913293.jpg: 2
+  train/ID1084819986.jpg: 2
+  train/ID1148666289.jpg: 2
+  train/ID95050718.jpg: 2
+  train/ID900012207.jpg: 2
+  train/ID1345375788.jpg: 2
+  train/ID1573329652.jpg: 2
+  train/ID1472525822.jpg: 2
+  train/ID1182523622.jpg: 2
+  train/ID710341728.jpg: 2
+  train/ID697718693.jpg: 2
+  train/ID1782608354.jpg: 2
+  train/ID249042826.jpg: 2
+  train/ID1559189397.jpg: 2
+  train/ID1473228876.jpg: 2
+  train/ID290369222.jpg: 2
+  train/ID1859251563.jpg: 2
+  train/ID6269659.jpg: 2
+  train/ID1703304524.jpg: 2
+  train/ID1139918758.jpg: 2
+  train/ID1275072698.jpg: 2
+  train/ID1428837636.jpg: 2
+  train/ID587125778.jpg: 2
+  train/ID1277756619.jpg: 2
