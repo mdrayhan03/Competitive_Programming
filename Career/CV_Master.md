@@ -95,7 +95,7 @@ LinkedIn: linkedin.com/in/mdrayhan03 · GitHub: github.com/mdrayhan03 · Portfol
 - `[AI]` Designed **multi-provider LLM orchestration** with **tool calling** and fallback routing across four model vendors, keeping the agent running when any single provider degraded.
 - `[BE][FS]` Cut average **API response time ~35%** by offloading asset storage to **Cloudflare R2 (S3-compatible)** object storage and resolving server storage bottlenecks.
 - `[BE]` Improved backend performance and throughput using **Celery** task queues and **Redis** caching for asynchronous processing of long-running agent jobs.
-- `[ERP][FS]` Delivered **CWTAMC**, a real-estate ERP on **Frappe / ERPNext**, automating the full operations workflow and replacing a manual Excel process — eliminating hours of repetitive data entry per <<day / week — pick one>>.
+- `[ERP][FS]` Delivered **CWTAMC**, a real-estate ERP on **Frappe / ERPNext**, migrating the company's entire operations team off manual spreadsheets onto automated DocTypes and workflows — eliminating **~15+ hours of repetitive manual data entry per week**.
 - `[ERP]` Built custom **DocTypes**, server scripts and workflows in the **Frappe Framework**, and handled data migration from the legacy spreadsheet process.
 - `[BE][FS]` Containerised backend services with **Docker** and deployed on **Azure**, streamlining releases into a consistent, reproducible process.
 - `[BE]` Monitored production services (CPU, memory, storage) via **Portainer** and Docker stats with structured **Python logging**, using it to diagnose and resolve live issues.
@@ -129,11 +129,11 @@ LinkedIn: linkedin.com/in/mdrayhan03 · GitHub: github.com/mdrayhan03 · Portfol
 > Keep **2–3**. Lead with the one closest to the ad. Every entry: name · role · stack line · live/code links · 2–3 bullets.
 
 ### Plastic Kothay — Crowdsourced Waste Reporting Platform
-`[FS][BE][NG]` · **Sole engineer** · May 2025 – Present · [Live] · [Code: github.com/mdrayhan03/plastickothay_dev]
+`[FS][BE][NG]` · **Sole engineer** · May 2025 – Present · [Live: plastickothay-dev-1.onrender.com](https://plastickothay-dev-1.onrender.com/) · [Code: github.com/mdrayhan03/plastickothay_dev]
 `Django · Django REST Framework · PostgreSQL · React · TypeScript · Vite · Docker · GitHub Actions`
 
 - `[BE][NG]` Architected the backend as a **hexagonal (ports-and-adapters) architecture** — a framework-free domain core, abstract ports, and swappable adapters for persistence, storage, email and auth wired through a single composition root.
-- `[BE][NG]` Built a full **test pyramid** across **31 test files** — unit tests on the pure domain, integration tests on the API, and **contract tests** asserting the domain scoring spec against the production SQL leaderboard to catch drift.
+- `[BE][NG]` Built a full **test pyramid** across **310 tests** (252 backend unit, integration, and SQL contract tests + 58 frontend Vitest/Playwright tests); executed concurrent stress testing via **Locust** (15 simulated users), validating a **100% request success rate, zero connection drops, and stable throughput** under constrained cloud hosting.
 - `[NG][FS]` Enforced the architecture in **CI with GitHub Actions** — `lint-imports` blocks any framework import reaching the domain, plus ruff and pytest on every push.
 - `[BE]` Designed the scoring system to **derive points from current state** rather than an append-only ledger, so hiding a post automatically strips its points and no reconciliation job is ever needed.
 - `[FS]` Integrated the **Google Drive API** for media storage with **compensating rollback** for failed uploads, since third-party storage cannot join the database transaction.
