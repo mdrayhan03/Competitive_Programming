@@ -1,6 +1,0 @@
-model,image_path,Dry_Green_g,Dry_Dead_g,Dry_Clover_g,GDM_g,Dry_Total_g
-MobileNetV0,test/ID1001187975.jpg,38.603,19.982,0.0,38.603,58.585
-EfficientNetB0,test/ID1001187975.jpg,42.535,22.901,0.0,42.535,65.436
-EfficientNetB3,test/ID1001187975.jpg,26.136,28.6,0.719,26.855,55.455
-DenseNet121,test/ID1001187975.jpg,24.634,27.835,0.462,25.096,52.931
-ViT-B16,test/ID1001187975.jpg,26.503,16.489,0.44,26.943,43.432

@@ -1,9 +1,0 @@
-configuration,weighted_R2,delta_vs_final,MAE_g,RMSE_g,seconds
-"FINAL (raw, a=0.35, unfreeze=0.30, LR=5e-5, trimmed aug)",0.7398,0.0,6.389,10.271,334
-Target: log1p (vs raw),0.2313,-0.5084,8.181,14.405,266
-Loss: alpha=0.65 (MAE-heavy),0.6981,-0.0417,6.664,10.764,307
-Loss: alpha=0.50,0.7277,-0.012,6.469,10.456,320
-Unfreeze: frozen backbone (head only),0.2765,-0.4633,8.812,14.91,2616
-"Unfreeze: 0.15 (over-conservative, original)",0.2886,-0.4512,8.778,14.832,2533
-"LR: 1e-4 (vs 5e-5, too hot for ViT)",0.7127,-0.0271,6.199,10.2,225
-Augmentation: full (color jitter + zoom),0.0917,-0.6481,10.461,16.647,1164
